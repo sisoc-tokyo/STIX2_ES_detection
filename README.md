@@ -16,8 +16,8 @@
 <a href="https://github.com/sisoc-tokyo/STIX2_ES_detection/tree/master/Logstash">リアルタイム検知ツールはこちら</a><br/>
 　プロキシログをリアルタイムで受信した際に、logstashから起動される検知プログラム。<br/>
 　プロキシログとブラックリストを突合し、該当するログを検知した場合は、アラートメールを送信する。<br/>
-  また、"squid"インデックスの"indicator"フィールドにインディケータにマッチしたことを示すフラグ"matched"を付与する。<br/>
-  Logstashが動作しているサーバに配置してください。<br/>
+　また、"squid"インデックスの"indicator"フィールドにインディケータにマッチしたことを示すフラグ"matched"を付与する。<br/>
+　Logstashが動作しているサーバに配置してください。<br/>
 
 　使用方法は以下です。<br/>
 　Logstashの起動時に、logstash.confを読み込むように指定します<br/>
@@ -32,6 +32,6 @@
 　Elasticsearchを管理するためのPC（ElasticsearchのREST APIにアクセス可能なPC）に配置してください。<br/>
 
 　使用方法は以下です。<br/>
-　python input_report.py {ElasticsearchのIPアドレス}:9200 {STIX 2.0形式のjsonファイル}
+　python input_report.py {ElasticsearchのIPアドレス}:9200 {STIX 2.0形式のjsonファイル}<br>
   例）python input_report.py 192.0.2.100:9200 apt1.json 
 
